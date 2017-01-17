@@ -3,13 +3,43 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>TypeScript HTML App</title>
+    <title>TicTacToe - COMP 397</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="app.css" type="text/css" />
     <script src="app.js"></script>
 </head>
 <body>
-    <h1>TypeScript HTML App</h1>
+    
+    <div class="tictactoe-canvas">
+        <h1>TicTacToe Game</h1>
+        <canvas id="myCanvas" width="600" height="600" class="game-canvas" onclick="playerLance(this)"></canvas>
+        <br /><a href="#" class="button" onclick="resetBoard();">Reset Game</a>
+        <div class="scoreboard">
+            <ul>
+                <li>Player 1: <span id="player1_score"> </span></li>
+                <li>Player 2: <span id="player2_score"> </span></li>
+            </ul>
+        </div>
+    </div>
 
-    <div id="content"></div>
+
+    <!--<div>
+        <div>
+            <h2>Guess GAme - Previous</h2>
+        </div>
+        <div class="hint">Hint a Number</div>
+        <div class="hintvalue"></div>
+        <div class="guesscount"></div>
+
+        <form id="game-form" name="game-form">
+            <label for="guess">Guess:</label>
+            <input type="text" name="guess" />
+            <a href="#" class="button" value="Guess!" id="guess" onclick="">Guess</a>
+
+        </form>
+    </div>
+        -->
 </body>
 </html>

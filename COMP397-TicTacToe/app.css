@@ -5,3 +5,23 @@
 span {
     font-style: italic;
 }
+
+.tictactoe-canvas {
+    text-align: center;
+}
+
+.game-canvas{
+    border: 1px solid #000000;
+}
+
+.scoreboard {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.scoreboard ul li {
+    text-decoration: none;
+    list-style: none;
+}
